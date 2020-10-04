@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="js-clock">
+            <span class="clock">00:00</span>
+            <span class="date">date</span>
+        </div>
+        <span class="greeting">준휘님 환영합니다!</span>
+    </header>
+    <main>
+        <div class="bookmark">
+            <h2>Book Mark</h2>
+            <div class="bookmark__sitelist">
+                <a href="https://www.naver.com" target="blank"><span><img src="https://www.naver.com/favicon.ico?1"/></span></a>
+                <a href="https://saint.ssu.ac.kr/irj/portal" target="blank"><span><img src="images/U-saint.PNG"/></span></a>
+                <a href="https://www.youtube.com/" target="blank"><span><img src="https://www.youtube.com/s/desktop/b4620429/img/favicon_48.png"/></span></a>
+                <a href="https://www.twitch.tv/" target="blank"><span><img src="https://static.twitchcdn.net/assets/favicon-32-d6025c14e900565d6177.png"/></span></a>
+                <a href="https://www.netflix.com/browse" target="blank"><span><img src="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/></span></a>
+            </div>
+        </div>
+        <button id="recommend-part">view recommend contents</button>
+        <div class="recommend-contents">
+            <div class="contents youtube-contents">
+                <img class="contents__image", src="https://www.youtube.com/s/desktop/b4620429/img/favicon_48.png"/>
+                <a class="content" href="https://www.youtube.com/watch?v=FEfBRt8QtXc">
+                    <div class="content__image">
+                        <img src="images/J-youtubeSample.PNG"/>
+                    </div>
+                    <div class="content__script">
+                        <span class="content-title">Dream-J</span>
+                        <span class="content-owner">MrTakuyaKimura</span>
+                    </div>
+                </a>
+                <a class="content" href="https://www.youtube.com/watch?v=mR_QCRIC7K4">
+                    <div class="content__image">
+                        <img src="images/runningman-youtubeSample.PNG"/>
+                    </div>
+                    <div class="content__script">
+                        <span class="content-title">(ENG SUB)[예능맛ZIP/런닝맨] 기린 vs 메뚜기 환상 케미 모음.ZIP / Runningman</span>
+                        <span class="content-owner">SBS ENTERPLAY</span>
+                    </div>
+                </a>
+            </div>
+            <div class="contents twitch-contents">
+                <img class="contents__image", src="https://static.twitchcdn.net/assets/favicon-32-d6025c14e900565d6177.png"/>
+                <a class="content" href="https://www.youtube.com/watch?v=mR_QCRIC7K4">
+                    <div class="content__image">
+                        <img src="images/purin-twitchSample.PNG"/>
+                    </div>
+                    <div class="content__script">
+                        <span class="content-title">고인물 초빙석 이블위딘 공략 연습!</span>
+                        <span class="content-owner">푸린_ (rngudwns)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="contents netflix-contents">
+                <img class="contents__image", src="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
+                <a class="content" href="https://www.netflix.com/watch/70143824?tctx=2%2C0%2C%2C%2C%2C">
+                    <div class="content__image">
+                        <img src="images/netflixSample.PNG"/>
+                    </div>
+                    <div class="content__script">
+                        <span class="content-title">시즌 6: 19화 "레전 데디!"</span>
+                        <span class="content-owner"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="javascript/clock.js"></script>
+    <script src="javascript/view_recommendation.js"></script>
+    <script src="javascript/background.js"></script>
+</body>
+</html>
